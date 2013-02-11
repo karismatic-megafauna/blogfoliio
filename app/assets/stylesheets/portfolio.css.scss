@@ -1,4 +1,7 @@
 .portfolio{
+  .header{
+    margin: 30px 50px;
+  }
   .sub-head{
     margin-left: 10px;
     width: 250px;
@@ -8,7 +11,19 @@
     }
   }
   .nav-tabs{
+    .work, .education, .experiences{
+      margin-left: 0;
+      a{
+        background-color: #dadada;
+      }
+    }
     margin-bottom: 0;
+    li.active a{
+      background-color: #fff;
+    } 
+    li a:hover{
+      color: #666;
+    }
   }
   .tab-content{
     background-color: white;
@@ -16,6 +31,10 @@
     border-top: 0;
   }
   .job-container{
-    margin: 0px 10px
+    margin: 0px 10px;
+    a {
+      border-bottom: 1px dashed gray;
+      color: #666;
+    }
   }
 }

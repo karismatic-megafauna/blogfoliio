@@ -13,9 +13,23 @@
  */
 
 body {
-  background-image: url(frenchstucco.png);
+  background-image: url(brushed_alu_dark.png);
   background-color: rgb(238, 238, 238);
   zoom: 1;
   background-position: initial initial;
   background-repeat: repeat repeat;
+}
+
+.about-me{
+  right: 10px;
+}
+
+.navbar-inner{
+  padding: 10px 0px;
+}
+
+.navbar .brand:hover{
+  background-color: transparent;
+  color: #333333;
+  text-decoration: none; 
 }
