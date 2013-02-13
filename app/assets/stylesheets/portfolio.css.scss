@@ -1,40 +1,61 @@
 .portfolio{
   .header{
     margin: 30px 50px;
+    .head{
+      h1{
+        font-size: 50px;
+      }
+    }
   }
   .sub-head{
     margin-left: 10px;
     width: 250px;
+    border-left: 1px solid #dadada;
     p{
-      padding: 5px 0px 5px 10px;
-      border-left: 1px solid black;
+      padding: 12px 0px 5px 10px;
     }
   }
   .nav-tabs{
     .work, .education, .experiences{
       margin-left: 0;
       a{
-        background-color: #dadada;
+        background-color: #fff;
       }
     }
     margin-bottom: 0;
     li.active a{
-      background-color: #fff;
+      background-color: #efefef;
     } 
-    li a:hover{
-      color: #666;
+    li:hover a{
+      color: #fff;
+      background-color: #555;
+      border-color: #555;
+    }
+
+    li.active:hover a{
+      background-color: #efefef;
+      border-color: #efefef;
+      color: #555;
     }
   }
   .tab-content{
-    background-color: white;
+    background-color: #efefef;
     border: 1px solid rgb(221, 221, 221);
     border-top: 0;
+    margin-bottom: 20px;
+    p{
+      color: #333;
+    }
   }
-  .job-container{
-    margin: 0px 10px;
+  .job-container, .edu-container, .exp-container{
+    margin: 0px 20px;
     a {
       border-bottom: 1px dashed gray;
       color: #666;
     }
+  }
+  hr {
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #777;
   }
 }

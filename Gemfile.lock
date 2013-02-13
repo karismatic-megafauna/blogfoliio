@@ -57,6 +57,8 @@ GEM
       multi_json (~> 1.0)
     git_remote_branch (0.3.4)
       rainbow
+    google-webfonts (0.1.2)
+      actionpack (>= 3.0.0)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -143,6 +145,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   debugger
   git_remote_branch
+  google-webfonts (~> 0.1.2)
   jquery-rails
   less-rails
   pg
