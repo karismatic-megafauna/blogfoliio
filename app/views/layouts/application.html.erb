@@ -24,16 +24,32 @@
           <li><%= link_to "Interests", home_interests_path %></li>
           <li><%= link_to "Blog", posts_path %></li>
         </ul>
+        <ul class='nav pull-right'>
+          <% if user_signed_in? %>
+            <li><a>Hello! <%= current_user.email %></a></li>
+            <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+            <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+            <li><%= link_to 'Login', new_user_session_path%></li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>
 </nav>
 <aside class='container-fluid'>
   <div class='row-fluid'>
-    <div class='span9'><%= yield %></div>
+    <div class='span9'>
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, id: "flash_#{name}" %>
+      <% end %>
+      <%= yield %>
+    </div>
     <div class='span3 affix about-me'>
-      <h2>About Michael</h2>
-      <p>Michael Hinrichs is a 22 year old UCSB Graduate starting a career in Web Development. He loves riding sites on Rails and takes much joy in reading blogs about cool new technologies like <a href="http://meteor.com/">Meteor</a> and <a href="http://angularjs.org/">Angular JS</a>. He also LOVES soccer. With a passion. So if you are into nerdy web things, a fellow soccer enthusiast or someone who just wants to know more about M.G.H, you, my dear friend, are in the right place!<br>Enjoy!</p>
+      <h2 style='background-color: #1cd;
+padding: 10px;'>About Michael</h2>
+      <p>Michael Hinrichs is a 22 year old UCSB Graduate starting a career in Web Development. He loves riding Ruby on Rails and takes much joy in reading blogs about cool new technologies like <a href="http://meteor.com/">Meteor</a> and <a href="http://angularjs.org/">Angular JS</a>. He also LOVES soccer. With a passion. So if you are into nerdy web things, a fellow soccer enthusiast or someone who just wants to know more about M.G.H, you, my dear friend, are in the right place!<br>Enjoy!</p>
     </div>
   </div>
 </aside>

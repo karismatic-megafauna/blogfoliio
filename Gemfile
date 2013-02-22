@@ -35,7 +35,6 @@ group :development do
   gem 'better_errors'
 end
 
-
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -52,3 +51,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'devise'
