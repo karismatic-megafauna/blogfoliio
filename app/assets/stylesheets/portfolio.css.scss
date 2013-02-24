@@ -1,3 +1,5 @@
+@import "variables";
+
 .portfolio{
   .header{
     margin: 30px 50px;
@@ -12,19 +14,22 @@
     width: 250px;
     border-left: 1px solid #dadada;
     p{
-      padding: 12px 0px 5px 10px;
+      padding: 0px 0px 0px 10px;
+      margin: 0px;
     }
   }
   .nav-tabs{
     .work, .education, .experiences{
       margin-left: 0;
       a{
-        background-color: #fff;
+        background-color: $light-orange;
+        color: $white;
       }
     }
     margin-bottom: 0;
     li.active a{
-      background-color: #efefef;
+      background-color: $white;
+      color: $copy-black;
     } 
     li:hover a{
       color: #fff;
@@ -33,13 +38,13 @@
     }
 
     li.active:hover a{
-      background-color: #efefef;
-      border-color: #efefef;
+      background-color: $white;
+      border-color: $white;
       color: #555;
     }
   }
   .tab-content{
-    background-color: #efefef;
+    background-color: $white;
     border: 1px solid rgb(221, 221, 221);
     border-top: 0;
     margin-bottom: 20px;
@@ -47,7 +52,7 @@
       color: #333;
     }
   }
-  .job-container, .edu-container, .exp-container{
+  .job-container, .edu-container, .exp-container {
     margin: 0px 20px;
     a {
       border-bottom: 1px dashed gray;
