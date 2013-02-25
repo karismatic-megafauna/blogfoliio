@@ -34,15 +34,17 @@ font-family: 'Marvel', sans-serif
 font-family: 'Megrim', cursive
 font-family: 'Metrophobic', sans-serif
 font-family: 'Raleway Dots', cursive
+font-family: 'Changa One', cursive;
+font-family: 'Raleway', sans-serif;
 */
 
 body {
-//  background-image: url(brushed_alu_dark.png);
-//  background-color: rgb(238, 238, 238);
-//  zoom: 1;
-//  background-position: iniftial initial;
-//  background-repeat: repeat repeat;
-  background-color: #fff;
+  background-image: url(low_contrast_linen.png);
+  background-color: rgb(238, 238, 238);
+  zoom: 1;
+  background-position: iniftial initial;
+  background-repeat: repeat repeat;
+//  background-color: #fff;
 }
 
 h1 {
@@ -71,6 +73,27 @@ p{
 
 dd, dt {
   font-family: 'Metrophobic', sans-serif !important;
+}
+
+.main-header{
+  .title{
+//    font-family: 'Changa One', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px; 
+    letter-spacing: -5px;
+    color: $white;
+    &:hover{
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  .top-links {
+    list-style-type: none;
+    div{
+      display: inline;
+      width: 25%;
+    }
+  }
 }
 
 .main-content{

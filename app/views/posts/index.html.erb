@@ -7,11 +7,11 @@
     <% @posts.each_with_index do |post,index| %>
       <div class="row-fluid post">
         <article class='post_<%=index%> span12'>
-          <div class="row-fluid ">
+          <nav class="row-fluid ">
             <div class='span10'>
               <h3><%= link_to post.title, post_path(post) %></h3>
             </div>
-          </div>
+          </nav>
           <div class="row-fluid">
             <div class='span8 offset1'><%= post.content %></div>
           </div>
