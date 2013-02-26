@@ -1,6 +1,8 @@
 @import "variables";
 
-.portfolio{
+.portfolio {
+  background-color: $green-alpha;
+  padding: 1px 20px 10px;
   .header{
     margin: 30px 50px;
     .head{
@@ -16,13 +18,14 @@
     p{
       padding: 0px 0px 0px 10px;
       margin: 0px;
+      color: $white;
     }
   }
   .nav-tabs{
     .work, .education, .experiences{
       margin-left: 0;
       a{
-        background-color: $light-orange;
+        background-color: $green-alpha - #222;
         color: $white;
       }
     }
@@ -33,8 +36,8 @@
     } 
     li:hover a{
       color: #fff;
-      background-color: #555;
-      border-color: #555;
+      background-color: $green-alpha - #333;
+      border-color: $green-alpha - #333;
     }
 
     li.active:hover a{
@@ -54,6 +57,9 @@
   }
   .job-container, .edu-container, .exp-container {
     margin: 0px 20px;
+    h3{
+      color: $green-beta;
+    }
     a {
       border-bottom: 1px dashed gray;
       color: #666;

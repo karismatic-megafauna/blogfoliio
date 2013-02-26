@@ -1,7 +1,8 @@
-<%- model_class = Post -%>
-<div class="page-header">
-  <h1>Say What?</h1>
-</div>
+<div class='blog'>
+  <%- model_class = Post -%>
+  <div class="page-header">
+    <h1>Say What?</h1>
+  </div>
 
   <section> 
     <% @posts.each_with_index do |post,index| %>
@@ -36,3 +37,4 @@
       <%= link_to "post something", new_post_path, :class => 'span12 new-post' %>
     </div>
   </section>
+</div>

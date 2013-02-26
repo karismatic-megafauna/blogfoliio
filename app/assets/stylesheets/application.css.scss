@@ -53,12 +53,11 @@ h1 {
 }
 
 h2 {
-  color: white !important;
+  color: white;
   font-family: 'Jura', sans-serif !important;
 }
 
 h3{
-  color: $primary-orange !important;
   font-family: 'Jura', sans-serif !important;
 }
 
@@ -67,7 +66,7 @@ h5{
 }
 
 p{
-  color: #333 !important;
+  color: #333;
   font-family: 'Metrophobic', sans-serif !important;
 }
 
@@ -76,58 +75,90 @@ dd, dt {
 }
 
 .main-header{
-  .title{
-//    font-family: 'Changa One', cursive;
-    font-family: 'Raleway', sans-serif;
-    font-size: 70px; 
-    letter-spacing: -5px;
-    color: $white;
-    &:hover{
+  .title-container {
+  margin-bottom: 10px;  
+    .title{
+  //    font-family: 'Changa One', cursive;
+      font-family: 'Raleway', sans-serif;
+      font-size: 70px; 
+      letter-spacing: -4px;
       color: $white;
-      text-decoration: none;
+      &:hover{
+        color: $white;
+        text-decoration: none;
+      }
     }
   }
   .top-links {
     list-style-type: none;
-    div{
-      display: inline;
+    span.link{
+      display: inline-block;
       width: 25%;
+      margin-bottom: 30px;
+      text-align: center;
+      a{
+        color: $white;
+        font-weight: bold;
+        font-family: 'Metrophobic', sans-serif;
+        display: inline-block;
+        padding: 5px 0px;
+        width: 100%;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .blue{
+      background-color: $blue-alpha;
+      border-bottom: solid $blue-alpha - #222;
+      &:hover{
+        border-bottom: solid $blue-alpha + #333;
+      }
+    }
+    .green{
+      background-color: $green-alpha;
+      border-bottom: solid $green-alpha - #222;
+      &:hover{
+        border-bottom: solid $green-alpha + #333;
+      }
+    }
+    .purple{
+      background-color: $purple-alpha;
+      border-bottom: solid $purple-alpha - #222;
+      &:hover{
+        border-bottom: solid $purple-alpha + #333;
+      }
+    }
+    .orange{
+      background-color: $orange-alpha;
+      border-bottom: solid $orange-alpha - #222;
+      &:hover{
+        border-bottom: solid $orange-alpha + #333;
+      }
     }
   }
 }
 
-.main-content{
-  padding: 0px 20px 10px;
-  background-color: $primary-blue;
-}
-
 .about-me{
-  a, a:visited{
-    border-bottom: 1px dashed $copy-black;
-    color: $copy-black;
+  a, a:visited, a:hover{
+    border-bottom: 1px dashed $white - #444;
+    color: $white - #444;
+    text-decoration: none;
   }
   .about-header{
-    background-color: $primary-blue;
+    background-color: $white;
     padding: 10px;
     margin: 0px;
+    color: $copy-black;
   }
   p {
-    padding-left: 10px;
-    border: solid $primary-blue;
-    border-top: solid $header-blue;
+    padding: 10px 8px 10px 10px;
+    border: solid $white;
+    border-top: solid $white - #444;
+    color: $white;
   }
 }
 
-.navbar-inner{
-  padding: 10px 0px;
-  background-color: $primary-orange !important;
-}
-
-.navbar .brand:hover{
-  background-color: transparent;
-  color: #333333;
-  text-decoration: none;
-}
 ::-webkit-scrollbar {
     width: 12px;
     &:hover{

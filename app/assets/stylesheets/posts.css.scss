@@ -1,34 +1,34 @@
 @import "variables";
-
-.post{
-  margin:20px 0px;
-  article{
-    padding: 20px;
-    background-color: white;
-  }
-  h3,h5 {
-    display:inline;
-    a {
-      color: $primary-orange;
+.blog {
+  background-color: $orange-alpha;
+  padding: 1px 20px 10px;
+  .post{
+    margin:20px 0px;
+    article{
+      padding: 20px;
+      background-color: $white;
+    }
+    h3,h5 {
+      display:inline;
+      a {
+        color: $orange-beta;
+      }
     }
   }
-}
 
-.new-post{
-  background-color:$primary-orange;
-  padding: 10px;
-  text-align: center;
-  border-bottom: 3px solid $dark-orange;
-  border-right: 3px solid $dark-orange;
-  color: white;
-  font-family: 'Jura', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  &:hover{
-    border-bottom: 3px solid $primary-orange;
-    border-right: 3px solid $primary-orange;
-    color: white;
-    margin-top: 3px;
-    padding-top:7px;
+  .new-post{
+    background-color:$orange-alpha + #2a2a2a;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid $orange-alpha - #222;
+    color: $copy-black - #444;
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    &:hover{
+      border-bottom: 3px solid $orange-alpha + #444;
+      color: $copy-black - #333;
+      text-decoration: none;
+    }
   }
 }

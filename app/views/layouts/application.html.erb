@@ -11,14 +11,14 @@
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="span7 offset2 main-header">
-      <div class='top-links span12'>
-       <div><%= link_to "Home", home_index_path, :class => 'link blue' %></div>
-       <div><%= link_to "Portfolio", home_portfolio_path, :class => 'link green'%></div>
-       <div><%= link_to "Interests", home_interests_path, :class => 'link purple'%></div>
-       <div><%= link_to "Blog", posts_path, :class => 'link orange'%></div>
-      </div>
+      <nav class='top-links span12'>
+        <span class='link blue'><%= link_to "Home", home_index_path %></span><!--
+        --><span class='link green'><%= link_to "Portfolio", home_portfolio_path %></span><!--
+        --><span class='link purple'><%= link_to "Interests", home_interests_path %></span><!--
+        --><span class='link orange'><%= link_to "Blog", posts_path %></span>
+      </nav>
       <div class='title-container'>
-        <%=link_to "MICHAEL HINRICHS", home_index_path, :class => 'title' %>
+        <%=link_to "/MICHAEL HINRICHS", home_index_path, :class => 'title' %>
       </div>
     </div>
     <div class='span3'>
@@ -35,7 +35,7 @@
     </div>
   </div>
 </div>
-<aside class='container-fluid'>
+<section class='container-fluid'>
   <div class='row-fluid'>
     <div class='span7 offset2 main-content'>
       <% flash.each do |name, msg| %>
@@ -48,7 +48,7 @@
       <p>Michael Hinrichs is a 22 year old UCSB Graduate starting a career in Web Development. He loves riding Ruby on Rails and takes much joy in reading blogs about cool new technologies like <a href="http://meteor.com/">Meteor</a> and <a href="http://angularjs.org/">Angular JS</a>. He also LOVES soccer. With a passion. So if you are into nerdy web things, a fellow soccer enthusiast or someone who just wants to know more about M.G.H, you, my dear friend, are in the right place!<br>Enjoy!</p>
     </div>
   </div>
-</aside>
+</section>
 <footer>
 </footer>
 </body>
