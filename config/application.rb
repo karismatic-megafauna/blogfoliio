@@ -11,7 +11,7 @@ end
 
 config.assets.initialize_on_precompile = false
 
-config.assets.compile = true
+# config.assets.compile = true
 
 module Blog
   class Application < Rails::Application
