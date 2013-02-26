@@ -33,7 +33,7 @@ group :development do
   gem 'debugger'
   gem "git_remote_branch"
   gem 'better_errors'
-  gem 'binding-of-caller'
+  gem 'binding_of_caller'
 end
 
 gem 'jquery-rails'
