@@ -33,6 +33,7 @@ group :development do
   gem 'debugger'
   gem "git_remote_branch"
   gem 'better_errors'
+  gem 'binding-of-caller'
 end
 
 gem 'jquery-rails'
@@ -51,5 +52,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-
 gem 'devise'
