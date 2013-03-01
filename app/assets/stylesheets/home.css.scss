@@ -20,7 +20,10 @@
     width: 50%;
     display: inline;
     img{
-      width:100%;
+      width: 75%;
+      border: 1px solid $white;
+      margin-bottom: 5px;
+      margin-left: 12.5%;
     }
   }
 }
