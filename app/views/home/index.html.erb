@@ -1,4 +1,12 @@
 <div class='home'>
-  <h1>Welcome</h1>
-  <p>This is the website for Michael Hinrichs!</p>
+  <div class='welcome-copy-cnt'>
+    <h1>Welcome</h1>
+    <p>
+      You have made it to my (Michael George Hinrichs) Website! I am an aspiring Web Designer/Developer that lives in beautiful Santa Barbara.This site is still currently in production so please forgive all of the bugs and lack of content. The section that is the most useful  right now is the <%= link_to "Portfolio", home_portfolio_path %>.
+      <br><br>
+      Some interesting things about me: I am very passionate about developing for the Web and I know it is something I can and will do for the rest of my life. I enjoy developing in Rails a lot, it just makes sense and it makes things super easy! Soccer is something I am constantly thinking about or doing. If I am not dribbling around the office or on a lunch break at the closest pitch kickin' the ball around, I am probably eating lots of spicy food, bagels, tomatoes or potato gnocchi.</p>
+  </div>
+  <div class='welcome-img-cnt'><%= image_tag "homepage.jpg", :class => 'splash-img' %>
+    <p>Me on Half Dome! Yes it was scary and yes it was totally worth it.</p>
+  </div>
 </div>

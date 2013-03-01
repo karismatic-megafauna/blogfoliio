@@ -3,4 +3,24 @@
 .home {
   background-color: $blue-alpha;
   padding: 1px 20px 10px;
+  .welcome-copy-cnt{
+    width: 50%;
+    display: inline;
+  }
+  p{
+    color: $white - #222;
+    font-size: 17px;
+  }
+  a{
+    font-size: 17px;
+    color: $white;
+    border-bottom: 1px dashed $white;
+  }
+  .welcome-img-cnt{
+    width: 50%;
+    display: inline;
+    img{
+      width:100%;
+    }
+  }
 }
