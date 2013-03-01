@@ -20,5 +20,8 @@ test:
 
 production:
   adapter: postgresql
+  database: blog_test
   pool: 5
   timeout: 5000
+  user: michael_blog
+  password: fishstick
